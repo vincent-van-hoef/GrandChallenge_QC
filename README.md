@@ -23,8 +23,10 @@ python ncm_fastq.py -l sampleList.txt -O outdir -N outfile_prefix -p 4 -pt SNP.p
 
 ### Arguments
 
+```
 -l	list of samples (one per line: path_to_fastq.gz tab filename)
 -O	output directory
 -N	prefix for output files
 -p	number of processors
--pt	list of known SNPs (included in package)
+-pt`	list of known SNPs (included in package)
+```
