@@ -35,7 +35,7 @@ python ncm_fastq.py -l sampleList.txt -O outdir -N outfile_prefix -p 4 -pt SNP/S
 
 ### Input
 
-Most important is the list of samples: a headerless txt file with the path to the full fastq(.gz) file seperated by a tab from a filename. For now, I just use R2 and only one lane per sample. The script collectSample.sh (included here) finds and formats an input file based on part of the sample names; here the JUQ001-JUQ099 substring.
+Most important is the list of samples: a headerless txt file with the path to the full fastq(.gz) file seperated by a tab from a filename. For now, I just use R2 and only one lane per sample, this might be adapted for the different sample types. The script collectSample.sh (included here) finds and formats an input file based on part of the sample names; here the JUQ001-JUQ099 substring.
 
 ### Output
 
