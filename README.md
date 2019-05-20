@@ -20,7 +20,7 @@ export NCM_HOME=<installation_dir>/NGSCheckMate
 Run from the installation_dir:
 
 ```
-python ncm_fastq.py -l sampleList.txt -O outdir -N outfile_prefix -p 4 -pt SNP.pt
+python ncm_fastq.py -l sampleList.txt -O outdir -N outfile_prefix -p 4 -pt SNP/SNP.pt
 ```
 
 ### Arguments
