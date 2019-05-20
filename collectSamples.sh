@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Locate all the R1 fastq files on the filesystem - just R1 could be enough...
+# Locate all the R1 fastq files on the filesystem - just R2 could be enough...
 for sample in JUQ{018..99}
 do
-	locate $sample | grep "R1.*fastq.gz"
+	locate $sample | grep "R2.*fastq.gz"
 done >> samplePaths.txt
 
 # Format an input file for NGSCheckMate: path \t filename
