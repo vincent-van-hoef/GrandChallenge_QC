@@ -33,4 +33,9 @@ python ncm_fastq.py -l sampleList.txt -O outdir -N outfile_prefix -p 4 -pt SNP.p
 
 ### Input
 
-Most important is the list of samples: a headerless txt file with the path to the full fastq(.gz) file seperated by a tab from a filename. For now, I just use R2 and only one lane per sample. The script collectSample.sh (included here) finds and formats an input file based on oart of the sample names; here the JUQ001-JUQ099 substring.
+Most important is the list of samples: a headerless txt file with the path to the full fastq(.gz) file seperated by a tab from a filename. For now, I just use R2 and only one lane per sample. The script collectSample.sh (included here) finds and formats an input file based on part of the sample names; here the JUQ001-JUQ099 substring.
+
+### Output
+
+Three txt files describing (1) correlation coefficients between all samples, (2) all sample combinations above a certain threshold ("matching" samples) and (3) a correlation matrix. 
+Most useful is probably the pdf showing a dendrogram of all samples. So far, the way samples are being clustered together is the easiest way to assess relatedness.
