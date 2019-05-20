@@ -41,3 +41,11 @@ Most important is the list of samples: a headerless txt file with the path to th
 
 Three txt files describing (1) correlation coefficients between all samples, (2) all sample combinations above a certain threshold ("matching" samples) and (3) a correlation matrix. 
 Most useful is probably the pdf showing a dendrogram of all samples. So far, the way samples are being clustered together is the easiest way to assess relatedness.
+
+## Notes
+
+It might be usefiule to run fastqc on all fastq files used in the analysis to detect reasons for not matching.
+
+```
+awk '{print $1}' sampleList.txt | xargs -n1 fastqc -o /path/to/outdir/
+```
