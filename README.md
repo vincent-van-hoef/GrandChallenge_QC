@@ -49,3 +49,5 @@ It might be usefiule to run fastqc on all fastq files used in the analysis to de
 ```
 awk '{print $1}' sampleList.txt | xargs -n1 fastqc -o /path/to/outdir/
 ```
+
+More reads improve the analysis, so it might be a good idea to merge lanes before if results look strange.
